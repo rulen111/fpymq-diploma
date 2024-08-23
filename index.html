@@ -73,7 +73,105 @@
             </ul>
         </section>
         <aside class="sidebar">
-
+            <div class="sidebar__container sidebar__latest-posts">
+                <h2 class="sidebar__latest-posts__title">Новые посты</h2>
+                <div class="sidebar__latest-posts__line"></div>
+                <ul class="sidebar__latest-posts__list">
+                    <li class="sidebar__post">
+                        <img src="img/2.jpg" alt="sidebar__post__1" class="sidebar__post__img">
+                        <div class="sidebar__post__desc">
+                            <p class="sidebar__post__date">14 июня 2019</p>
+                            <h3 class="sidebar__post__title">10 мест, ради которых стоит проснуться</h3>
+                        </div>
+                    </li>
+                    <li class="sidebar__post">
+                        <img src="img/151.jpg" alt="sidebar__post__2" class="sidebar__post__img">
+                        <div class="sidebar__post__desc">
+                            <p class="sidebar__post__date">14 июня 2019</p>
+                            <h3 class="sidebar__post__title">Йога для домашних</h3>
+                        </div>
+                    </li>
+                    <li class="sidebar__post">
+                        <img src="img/45.jpg" alt="sidebar__post__3" class="sidebar__post__img">
+                        <div class="sidebar__post__desc">
+                            <p class="sidebar__post__date">14 июня 2019</p>
+                            <h3 class="sidebar__post__title">как мы превратили классное место в балкон</h3>
+                        </div>
+                    </li>
+                    <li class="sidebar__post">
+                        <img src="img/501.jpg" alt="sidebar__post__4" class="sidebar__post__img">
+                        <div class="sidebar__post__desc">
+                            <p class="sidebar__post__date">14 июня 2019</p>
+                            <h3 class="sidebar__post__title">Кулинарный подход к науке</h3>
+                        </div>
+                    </li>
+                    <li class="sidebar__post">
+                        <img src="img/7.jpg" alt="sidebar__post__5" class="sidebar__post__img">
+                        <div class="sidebar__post__desc">
+                            <p class="sidebar__post__date">14 июня 2019</p>
+                            <h3 class="sidebar__post__title">лучшие прически для распущенных волос</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__container sidebar__search">
+                <input class="sidebar__search__input" type="search" name="search" id="input__search" placeholder="Найти...">
+                <button class="sidebar__search__button">
+                    <img src="svg/search.svg" alt="search__button__icon" class="search__button__icon">
+                </button>
+            </div>
+            <div class="sidebar__container sidebar__subscription-form">
+                <form action="" class="subscription-form">
+                    <h2 class="subscription-form__title">Рассылка</h2>
+                    <div class="subscription-form__line"></div>
+                    <input class="subscription-form__input" type="email" name="email" id="input__email" placeholder="Ваш email-адрес">
+                    <button class="subscription-form__button">Подписаться</button>
+                </form>
+            </div>
+            <div class="sidebar__container sidebar__tags-list">
+                <h2 class="tags-list__title">Теги</h2>
+                <div class="tags-list__line"></div>
+                <div class="tags-list__container">
+                    <div class="tags-list__container__item">Fashion</div>
+                    <div class="tags-list__container__item">Interior</div>
+                    <div class="tags-list__container__item">Lifestyle</div>
+                    <div class="tags-list__container__item">ART</div>
+                    <div class="tags-list__container__item">HEALTH</div>
+                    <div class="tags-list__container__item">FOOD</div>
+                    <div class="tags-list__container__item">MuSiC</div>
+                    <div class="tags-list__container__item">travel</div>
+                </div>
+            </div>
+            <div class="sidebar__container sidebar__themes">
+                <h2 class="themes__title">Темы</h2>
+                <div class="themes__line"></div>
+                <ul class="themes__list">
+                    <li class="themes__list__item">
+                        <h3 class="themes__list__item__title">Красота</h3>
+                        <p class="themes__list__item__count">12</p>
+                    </li>
+                    <li class="themes__list__item">
+                        <h3 class="themes__list__item__title">Здоровье</h3>
+                        <p class="themes__list__item__count">4</p>
+                    </li>
+                    <li class="themes__list__item">
+                        <h3 class="themes__list__item__title">Образ жизни</h3>
+                        <p class="themes__list__item__count">145</p>
+                    </li>
+                    <li class="themes__list__item">
+                        <h3 class="themes__list__item__title">Музыка</h3>
+                        <p class="themes__list__item__count">28</p>
+                    </li>
+                    <li class="themes__list__item">
+                        <h3 class="themes__list__item__title">Спорт</h3>
+                        <p class="themes__list__item__count">62</p>
+                    </li>
+                    <li class="themes__list__item">
+                        <h3 class="themes__list__item__title">Йога</h3>
+                        <p class="themes__list__item__count">8</p>
+                    </li>
+                </ul>
+            </div>
         </aside>
         <section class="posts">
             <ul class="posts__list">
@@ -152,9 +250,52 @@
         </section>
         <section class="shop">
             <h2 class="shop__title"></h2>
+            <ul class="shop__list">
+                <li class="shop__item">
+                    <img src="img/shop-item-desk1.jpg" alt="shop-item-desk1" class="shop__item__img">
+                    <div class="shop__item__desc">
+                        <h3 class="shop__item__title">Подушки на диван</h3>
+                        <p class="shop__item__text">Набор из двух подушек с модными принтами. Видео о создании здесь.</p>
+                        <div class="shop__item__price">
+                            <p class="shop__item__price__old">1000 Р</p>
+                            <p class="shop__item__price__new">800 Р</p>
+                        </div>
+                        <button class="shop__item__link">В магазин</button>
+                    </div>
+                </li>
+                <li class="shop__item">
+                    <img src="img/shop-item-desk2.jpg" alt="shop-item-desk2" class="shop__item__img">
+                    <div class="shop__item__desc">
+                        <h3 class="shop__item__title">Кукла «Зайчик»</h3>
+                        <p class="shop__item__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена весенняя серия постов в блоге и несколько подкастов.</p>
+                        <div class="shop__item__price">
+                            <p class="shop__item__price__old"></p>
+                            <p class="shop__item__price__new">3500 Р</p>
+                        </div>
+                        <button class="shop__item__link">В магазин</button>
+                    </div>
+                </li>
+                <li class="shop__item">
+                    <img src="img/shop-item-desk3.jpg" alt="shop-item-desk3" class="shop__item__img">
+                    <div class="shop__item__desc">
+                        <h3 class="shop__item__title">Шестиугольная рамка</h3>
+                        <p class="shop__item__text">Необычная рамка для украшения дома из видео «Как сделать рамку из подручных средств за 30 минут» </p>
+                        <div class="shop__item__price">
+                            <p class="shop__item__price__old">500 Р</p>
+                            <p class="shop__item__price__new">400 Р</p>
+                        </div>
+                        <button class="shop__item__link">В магазин</button>
+                    </div>
+                </li>
+            </ul>
         </section>
         <footer class="footer">
-
+            <div class="footer__socials">
+                <img src="svg/001-dribbble.svg" alt="001-dribbble" class="footer__socials__img">
+                <img src="svg/001-pinterest.svg" alt="001-pinterest" class="footer__socials__img">
+                <img src="svg/003-tumblr.svg" alt="003-tumblr" class="footer__socials__img">
+            </div>
+            <p class="footer__copyright">Copyright © 2009–2019 City Blog LLC.</p>
         </footer>
     </main>
 </body>
