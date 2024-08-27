@@ -1,0 +1,103 @@
+@import "normalize.css";
+
+@font-face {
+    src:
+        local("Open Sans"), local("OpenSans"),
+        url(../fonts/OpenSans-Regular.ttf) format("truetype"),
+        url(../fonts/OpenSans-Regular.woff) format("woff"),
+        url(../fonts/OpenSans-Regular.woff2) format("woff2");
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src:
+        local("Open Sans Bold"), local("OpenSans-Bold"),
+        url(../fonts/OpenSans-Bold.ttf) format("truetype"),
+        url(../fonts/OpenSans-Bold.woff) format("woff"),
+        url(../fonts/OpenSans-Bold.woff2) format("woff2");
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: OpenSans, sans-serif;
+}
+
+.header {
+    background-image: url(../img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000;
+    height: 450px;
+
+    position: relative;
+  
+    z-index: 0;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.60;
+    
+    z-index: -1;
+  }
+
+.header__container {
+    padding: 29px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__logo {
+    width: 179px;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__list__item:nth-child(n+2) {
+    margin-left: 35px;
+}
+
+.menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.intro {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 97px;
+    width: 700px;
+}
+
+.title {
+    margin: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    line-height: 81px;
+    font-weight: 700;
+    color: #ffffff;
+}
