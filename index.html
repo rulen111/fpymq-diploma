@@ -407,36 +407,46 @@
     </footer>
     <div class="popup">
         <form action="" class="popup__form">
-            <h2 class="popup__title">Ваш ФИДБЕк</h2>
-            <div class="popup__title__line"></div>
+            <header class="section__header">
+                <h2 class="section__title">Ваш ФИДБЕк</h2>
+                <div class="section__title__line"></div>
+            </header>
             
-            <label for="freq-select" class="freq-select__label">Как часто вы заходите на сайт?</label>
-            <select name="freq-select" id="freq-select" class="popup__freq-select">
-                <option value="everyday" class="freq-select__option">Каждый день</option>
-                <option value="almost-everyday" class="freq-select__option">Почти каждый день</option>
-                <option value="once-per-days" class="freq-select__option">Раз в несколько дней</option>
-                <option value="once-per-weeks" class="freq-select__option">Раз в несколько недель</option>
-                <option value="muptiple-times-year" class="freq-select__option">Несколько раз в год</option>
-            </select>
+            <div class="popup__group">
+                <label for="freq-select" class="freq-select__label">Как часто вы заходите на сайт?</label>
+                <select name="freq-select" id="freq-select" class="popup__freq-select">
+                    <option value="everyday" class="freq-select__option">Каждый день</option>
+                    <option value="almost-everyday" class="freq-select__option">Почти каждый день</option>
+                    <option value="once-per-days" class="freq-select__option">Раз в несколько дней</option>
+                    <option value="once-per-weeks" class="freq-select__option">Раз в несколько недель</option>
+                    <option value="muptiple-times-year" class="freq-select__option">Несколько раз в год</option>
+                </select>
+            </div>
 
-            <fieldset class="popup__radio">
-                <legend class="radio__legend">Вы подписаны на e-mail рассылку?</legend>
-                <div>
-                    <input type="radio" id="yes" name="subscription" value="yes" checked>
-                    <label for="yes">Да</label>
-                </div>
-                <div>
-                    <input type="radio" id="no" name="subscription" value="no">
-                    <label for="no">Нет</label>
-                </div>
-            </fieldset>
+            <div class="popup__group">
+                <fieldset class="popup__radio">
+                    <legend class="radio__legend">Вы подписаны на e-mail рассылку?</legend>
+                    <label class="radio__answer" for="yes">
+                        <input type="radio" id="yes" name="subscription" value="yes" checked>
+                        <span class="radio__answer__yes">Да</span>
+                    </label>
+                    <label class="radio__answer" for="no">
+                        <input type="radio" id="no" name="subscription" value="no">
+                        <span class="radio__answer__no">Нет</span>
+                    </label>
+                </fieldset>
+            </div>
 
-            <label for="content-type" class="textarea__label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-            <textarea class="content-type__textarea" name="content-type" id="content-type" placeholder="Может, больше рецептов?"></textarea>
+            <div class="popup__group">
+                <label for="content-type" class="textarea__label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+                <textarea class="content-type__textarea" name="content-type" id="content-type" placeholder="Может, больше рецептов?"></textarea>
+            </div>
 
-            <button class="popup__form__button">Отправить</button>
-            <button class="popup__close">Закрыть окно</button>
+            <div class="popup__group">
+                <button class="popup__form__button">Отправить</button>
+            </div>
         </form>
+        <button class="popup__close"></button>
     </div>
 </body>
 </html>
