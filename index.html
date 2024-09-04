@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <a href="#0" class="header__logo"><img src="svg/noemi-logo.svg" alt="noemi"></a>
+    <!-- Page header -->
+    <header class="header page__section" id="home">
+        <!-- Menu container -->
+        <div class="header__container padded__container">
+            <a href="#home" class="header__logo"><img src="svg/noemi-logo.svg" alt="noemi"></a>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list__item">
@@ -33,83 +35,89 @@
                 </ul>
             </nav>
         </div>
+        <!-- Main header -->
         <div class="intro">
             <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
     </header>
-    <section class="trends">
+    <!-- First section: trends -->
+    <section class="trends page__section" id="posts">
+        <!-- Section header -->
         <header class="section__header">
             <h2 class="section__title">Сейчас в тренде</h2>
             <div class="section__title__line"></div>
         </header>
+        <!-- List of trends cards -->
         <ul class="trends__card__list">
             <li class="trends__card trends__card__1">
                 <article class="trends__card__container">
-                    <ul class="trends__card__category">
-                        <li class="trends__card__category__item">
+                    <ul class="category__list">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">Lifestyle</a>
                         </li>
-                        <li class="trends__card__category__item">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">INTERIOR</a>
                         </li>
                     </ul>
-                    <a href="#0" class="trends__card__link-title"><h3 class="trends__card__title">Сейчас в тренде: сад  на подоконнике</h3></a>
+                    <a href="#0"><h3 class="article__title trends__article__title">Сейчас в тренде: сад  на подоконнике</h3></a>
                 </article>
             </li>
             <li class="trends__card trends__card__2">
                 <article class="trends__card__container">
-                    <ul class="trends__card__category">
-                        <li class="trends__card__category__item">
+                    <ul class="category__list">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">Food</a>
                         </li>
                     </ul>
-                    <a href="#0" class="trends__card__link-title"><h3 class="trends__card__title">сыры на красивых  картинках из интернета: какие они на вкус?</h3></a>
+                    <a href="#0"><h3 class="article__title trends__article__title">сыры на красивых  картинках из интернета: какие они на вкус?</h3></a>
                 </article>
             </li>
             <li class="trends__card trends__card__3">
                 <article class="trends__card__container">
-                    <ul class="trends__card__category">
-                        <li class="trends__card__category__item">
+                    <ul class="category__list">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">Lifestyle</a>
                         </li>
-                        <li class="trends__card__category__item">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">tRAVEL</a>
                         </li>
                     </ul>
-                    <a href="#0" class="trends__card__link-title"><h3 class="trends__card__title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h3></a>
+                    <a href="#0"><h3 class="article__title trends__article__title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h3></a>
                 </article>
             </li>
             <li class="trends__card trends__card__4">
                 <article class="trends__card__container">
-                    <ul class="trends__card__category">
-                        <li class="trends__card__category__item">
+                    <ul class="category__list">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">food</a>
                         </li>
-                        <li class="trends__card__category__item">
+                        <li class="category__list__item">
                             <a href="#0" class="category__link">health</a>
                         </li>
                     </ul>
-                    <a href="#0" class="trends__card__link-title"><h3 class="trends__card__title">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h3></a>
+                    <a href="#0"><h3 class="article__title trends__article__title">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h3></a>
                 </article>
             </li>
         </ul>
     </section>
-    <div class="posts-sidebar__container">
+    <!-- Second section: posts, sidebar -->
+    <div class="posts-sidebar__container page__section padded__container" id="articles">
+        <!-- Main page content: posts -->
         <main class="posts">
             <ul class="posts__list">
                 <li class="posts__list__item">
-                    <img src="img/last-post1.jpg" alt="post1" class="post__img">
+                    <img src="img/last-post1.jpg" alt="beach" class="post__img">
                     <article class="post">
                         <header class="post__header">
-                            <ul class="post__header__category">
-                                <li class="post__header__category__item">
+                            <ul class="category__list">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">Travel</a>
                                 </li>
-                                <li class="post__header__category__item">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">Health</a>
                                 </li>
                             </ul>
-                            <a href="#0" class="post__header__link-title"><h3 class="post__header__title">10 мест, ради которых стоит проснуться на рассвете</h3></a>
+                            <a href="#0" class="post__header__link-title"><h3 class="article__title">10 мест, ради которых стоит проснуться на рассвете</h3></a>
                             <div class="post__header__stamp">
                                 <time class="post__header__stamp__date" datetime="2019-06-10">10 июня 2019</time>
                                 <span class="post__header__stamp__author">Неизвестный автор</span>
@@ -119,18 +127,18 @@
                     </article>
                 </li>
                 <li class="posts__list__item">
-                    <img src="img/last-post2.jpg" alt="post2" class="post__img">
+                    <img src="img/last-post2.jpg" alt="yoga on beach" class="post__img">
                     <article class="post">
                         <header class="post__header">
-                            <ul class="post__header__category">
-                                <li class="post__header__category__item">
+                            <ul class="category__list">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">health</a>
                                 </li>
-                                <li class="post__header__category__item">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">lifestyle</a>
                                 </li>
                             </ul>
-                            <a href="#0" class="post__header__link-title"><h3 class="post__header__title">ЙОга для начинающих в домашних условиях</h3></a>
+                            <a href="#0" class="post__header__link-title"><h3 class="article__title">ЙОга для начинающих в домашних условиях</h3></a>
                             <div class="post__header__stamp">
                                 <time class="post__header__stamp__date" datetime="2019-06-10">10 июня 2019</time>
                                 <span class="post__header__stamp__author">Неизвестный автор</span>
@@ -140,15 +148,15 @@
                     </article>
                 </li>
                 <li class="posts__list__item">
-                    <img src="img/last-post3.jpg" alt="post3" class="post__img">
+                    <img src="img/last-post3.jpg" alt="festival crowd" class="post__img">
                     <article class="post">
                         <header class="post__header">
-                            <ul class="post__header__category">
-                                <li class="post__header__category__item">
+                            <ul class="category__list">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">music</a>
                                 </li>
                             </ul>
-                            <a href="#0" class="post__header__link-title"><h3 class="post__header__title">Лучшие музыкальные фестивали этого лета</h3></a>
+                            <a href="#0" class="post__header__link-title"><h3 class="article__title">Лучшие музыкальные фестивали этого лета</h3></a>
                             <div class="post__header__stamp">
                                 <time class="post__header__stamp__date" datetime="2019-06-10">10 июня 2019</time>
                                 <span class="post__header__stamp__author">Неизвестный автор</span>
@@ -159,18 +167,18 @@
                     </article>
                 </li>
                 <li class="posts__list__item">
-                    <img src="img/last-post4.jpg" alt="post4" class="post__img">
+                    <img src="img/last-post4.jpg" alt="food on table" class="post__img">
                     <article class="post">
                         <header class="post__header">
-                            <ul class="post__header__category">
-                                <li class="post__header__category__item">
+                            <ul class="category__list">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">LYFESTYLE</a>
                                 </li>
-                                <li class="post__header__category__item">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">FOOD</a>
                                 </li>
                             </ul>
-                            <a href="#0" class="post__header__link-title"><h3 class="post__header__title">Наукоёмкий подход к кулинарии</h3></a>
+                            <a href="#0" class="post__header__link-title"><h3 class="article__title">Наукоёмкий подход к кулинарии</h3></a>
                             <div class="post__header__stamp">
                                 <time class="post__header__stamp__date" datetime="2019-06-10">10 июня 2019</time>
                                 <span class="post__header__stamp__author">Неизвестный автор</span>
@@ -180,21 +188,21 @@
                     </article>
                 </li>
                 <li class="posts__list__item">
-                    <img src="img/last-post5.jpg" alt="post5" class="post__img">
+                    <img src="img/last-post5.jpg" alt="pillow on chair" class="post__img">
                     <article class="post">
                         <header class="post__header">
-                            <ul class="post__header__category">
-                                <li class="post__header__category__item">
+                            <ul class="category__list">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">Lifestyle</a>
                                 </li>
-                                <li class="post__header__category__item">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">INTERIOR</a>
                                 </li>
-                                <li class="post__header__category__item">
+                                <li class="category__list__item">
                                     <a href="#0" class="category__link">art</a>
                                 </li>
                             </ul>
-                            <a href="#0" class="post__header__link-title"><h3 class="post__header__title">делаем модные принты на подушках для интерьера</h3></a>
+                            <a href="#0" class="post__header__link-title"><h3 class="article__title">делаем модные принты на подушках для интерьера</h3></a>
                             <div class="post__header__stamp">
                                 <time class="post__header__stamp__date" datetime="2019-06-10">10 июня 2019</time>
                                 <span class="post__header__stamp__author">Неизвестный автор</span>
@@ -205,73 +213,78 @@
                 </li>
             </ul>
         </main>
+        <!-- Sidebar -->
         <aside class="sidebar">
+            <!-- Latest posts -->
             <section class="sidebar__container sidebar__latest-posts">
                 <header class="section__header">
-                    <h2 class="section__title">Новые посты</h2>
+                    <h2 class="section__title sidebar__section__title">Новые посты</h2>
                     <div class="section__title__line"></div>
                 </header>
                 <ul class="sidebar__latest-posts__list">
                     <li class="sidebar__post">
                         <img src="img/2.jpg" alt="sidebar__post__1" class="sidebar__post__img">
                         <article class="sidebar__post__desc">
-                            <time class="sidebar__post__date" datetime="2019-06-14">14 июня 2019</time>
-                            <a href="#0" class="sidebar__post__link-title"><h3 class="sidebar__post__title">10 мест, ради которых стоит проснуться</h3></a>
+                            <time class="post__header__stamp__date" datetime="2019-06-14">14 июня 2019</time>
+                            <a href="#0" class="sidebar__post__link-title"><h3 class="article__title sidebar__post__title">10 мест, ради которых стоит проснуться</h3></a>
                         </article>
                     </li>
                     <li class="sidebar__post">
                         <img src="img/151.jpg" alt="sidebar__post__2" class="sidebar__post__img">
                         <article class="sidebar__post__desc">
-                            <time class="sidebar__post__date" datetime="2019-06-14">14 июня 2019</time>
-                            <a href="#0" class="sidebar__post__link-title"><h3 class="sidebar__post__title">Йога для домашних</h3></a>
+                            <time class="post__header__stamp__date" datetime="2019-06-14">14 июня 2019</time>
+                            <a href="#0" class="sidebar__post__link-title"><h3 class="article__title sidebar__post__title">Йога для домашних</h3></a>
                         </article>
                     </li>
                     <li class="sidebar__post">
                         <img src="img/45.jpg" alt="sidebar__post__3" class="sidebar__post__img">
                         <article class="sidebar__post__desc">
-                            <time class="sidebar__post__date" datetime="2019-06-14">14 июня 2019</time>
-                            <a href="#0" class="sidebar__post__link-title"><h3 class="sidebar__post__title">как мы превратили классное место в балкон</h3></a>
+                            <time class="post__header__stamp__date" datetime="2019-06-14">14 июня 2019</time>
+                            <a href="#0" class="sidebar__post__link-title"><h3 class="article__title sidebar__post__title">как мы превратили классное место в балкон</h3></a>
                         </article>
                     </li>
                     <li class="sidebar__post">
                         <img src="img/501.jpg" alt="sidebar__post__4" class="sidebar__post__img">
                         <article class="sidebar__post__desc">
-                            <time class="sidebar__post__date" datetime="2019-06-14">14 июня 2019</time>
-                            <a href="#0" class="sidebar__post__link-title"><h3 class="sidebar__post__title">Кулинарный подход к науке</h3></a>
+                            <time class="post__header__stamp__date" datetime="2019-06-14">14 июня 2019</time>
+                            <a href="#0" class="sidebar__post__link-title"><h3 class="article__title sidebar__post__title">Кулинарный подход к науке</h3></a>
                         </article>
                     </li>
                     <li class="sidebar__post">
                         <img src="img/7.jpg" alt="sidebar__post__5" class="sidebar__post__img">
                         <article class="sidebar__post__desc">
-                            <time class="sidebar__post__date" datetime="2019-06-14">14 июня 2019</time>
-                            <a href="#0" class="sidebar__post__link-title"><h3 class="sidebar__post__title">лучшие прически для распущенных волос</h3></a>
+                            <time class="post__header__stamp__date" datetime="2019-06-14">14 июня 2019</time>
+                            <a href="#0" class="sidebar__post__link-title"><h3 class="article__title sidebar__post__title">лучшие прически для распущенных волос</h3></a>
                         </article>
                     </li>
                 </ul>
             </section>
+            <!-- Search field -->
             <div class="sidebar__container sidebar__search__container">
-                <form action="" class="sidebar__search">
-                    <label for="" class="search-group">
+                <form action="action" class="sidebar__search">
+                    <label for="input__search" class="search-group">
                         <input class="sidebar__search__input" type="search" name="search" id="input__search" placeholder="Найти...">
                     </label>
-                    <button class="sidebar__search__button"></button>
+                    <button class="sidebar__search__button" type="button"></button>
                 </form>
             </div>
+            <!-- Subscription form -->
             <section class="sidebar__container sidebar__subscription-form">
                 <header class="section__header">
-                    <h2 class="section__title">Рассылка</h2>
+                    <h2 class="section__title sidebar__section__title">Рассылка</h2>
                     <div class="section__title__line"></div>
                 </header>
-                <form action="" class="subscription-form">
-                    <label for="" class="email-group">
+                <form action="action" class="subscription-form">
+                    <label for="input__email" class="email-group">
                         <input class="subscription-form__input" type="email" name="email" id="input__email" placeholder="Ваш email-адрес">
                     </label>
-                    <button class="subscription-form__button">Подписаться</button>
+                    <button class="subscription-form__button" type="button">Подписаться</button>
                 </form>
             </section>
-            <section class="sidebar__container sidebar__tags-list">
+            <!-- Tags -->
+            <section class="sidebar__container sidebar__tags-list" id="tags">
                 <header class="section__header">
-                    <h2 class="section__title">Теги</h2>
+                    <h2 class="section__title sidebar__section__title">Теги</h2>
                     <div class="section__title__line"></div>
                 </header>
                 <ul class="tags__list">
@@ -301,9 +314,10 @@
                     </li>
                 </ul>
             </section>
-            <section class="sidebar__container sidebar__themes">
+            <!-- Themes -->
+            <section class="sidebar__container sidebar__themes" id="themes">
                 <header class="section__header">
-                    <h2 class="section__title">Темы</h2>
+                    <h2 class="section__title sidebar__section__title">Темы</h2>
                     <div class="section__title__line"></div>
                 </header>
                 <ul class="themes__list">
@@ -329,7 +343,8 @@
             </section>
         </aside>
     </div>
-    <section class="shop">
+    <!-- Third section: shop -->
+    <section class="shop page__section padded__container">
         <header class="section__header">
             <h2 class="section__title">Наши изделия</h2>
             <div class="section__title__line"></div>
@@ -347,7 +362,7 @@
                             <span class="shop__item__price__old">1000 ₽</span>
                             <span class="shop__item__price__new">800 ₽</span>
                         </div>
-                        <button class="shop__item__link">В магазин</button>
+                        <button class="shop__item__link" type="button">В магазин</button>
                     </div>
                 </article>
             </li>
@@ -363,7 +378,7 @@
                             <span class="shop__item__price__old"></span>
                             <span class="shop__item__price__new">3500 ₽</span>
                         </div>
-                        <button class="shop__item__link">В магазин</button>
+                        <button class="shop__item__link" type="button">В магазин</button>
                     </div>
                 </article>
             </li>
@@ -379,14 +394,15 @@
                             <span class="shop__item__price__old">500 ₽</span>
                             <span class="shop__item__price__new">400 ₽</span>
                         </div>
-                        <button class="shop__item__link">В магазин</button>
+                        <button class="shop__item__link" type="button">В магазин</button>
                     </div>
                 </article>
             </li>
         </ul>
     </section>
-    <footer class="footer">
-        <ul class="socials__list">
+    <!-- Page footer -->
+    <footer class="footer padded__container">
+        <ul class="socials__list" id="contacts">
             <li class="socials__list__item">
                 <a href="#0" class="socials__link link__dribbble"></a>
             </li>
@@ -399,15 +415,15 @@
         </ul>
         <p class="footer__copyright">Copyright © 2009–2019 City Blog LLC.</p>
     </footer>
+    <!-- Popup element -->
     <div class="popup hidden" id="popup">
-        <form action="" class="popup__form">
+        <form action="action" class="popup__form">
             <button class="popup__close" id="popup__close" type="button"></button>
-
             <header class="section__header">
                 <h2 class="section__title">Ваш ФИДБЕк</h2>
                 <div class="section__title__line"></div>
             </header>
-            
+            <!-- Select element -->
             <div class="popup__group">
                 <label for="freq-select" class="freq-select__label">Как часто вы заходите на сайт?</label>
                 <select name="freq-select" id="freq-select" class="popup__freq-select">
@@ -418,7 +434,7 @@
                     <option value="muptiple-times-year" class="freq-select__option">Несколько раз в год</option>
                 </select>
             </div>
-
+            <!-- Radio element -->
             <div class="popup__group">
                 <fieldset class="popup__radio">
                     <legend class="radio__legend">Вы подписаны на e-mail рассылку?</legend>
@@ -432,16 +448,18 @@
                     </label>
                 </fieldset>
             </div>
-
+            <!-- Textarea -->
             <div class="popup__group">
                 <label for="content-type" class="textarea__label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
                 <textarea class="content-type__textarea" name="content-type" id="content-type" placeholder="Может, больше рецептов?"></textarea>
             </div>
-
+            <!-- Submit button -->
             <button class="popup__form__button" type="submit">Отправить</button>
         </form>
     </div>
+    <!-- Temporary button for popup opening -->
     <button class="popup__open" id="popup__open">Открыть попап</button>
+    <!-- Open/close popup script -->
     <script>
         const popupElement = document.getElementById("popup");
         const popupOpenButton = document.getElementById("popup__open");
