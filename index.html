@@ -399,8 +399,10 @@
         </ul>
         <p class="footer__copyright">Copyright © 2009–2019 City Blog LLC.</p>
     </footer>
-    <div class="popup">
+    <div class="popup hidden" id="popup">
         <form action="" class="popup__form">
+            <button class="popup__close" id="popup__close" type="button"></button>
+
             <header class="section__header">
                 <h2 class="section__title">Ваш ФИДБЕк</h2>
                 <div class="section__title__line"></div>
@@ -420,13 +422,13 @@
             <div class="popup__group">
                 <fieldset class="popup__radio">
                     <legend class="radio__legend">Вы подписаны на e-mail рассылку?</legend>
-                    <label class="radio__answer" for="yes">
-                        <input type="radio" id="yes" name="subscription" value="yes" checked>
-                        <span class="radio__answer__yes">Да</span>
+                    <label class="radio__group" for="yes">
+                        <input class="radio__control" type="radio" id="yes" name="subscription" value="yes" checked>
+                        <span class="radio__answer">Да</span>
                     </label>
-                    <label class="radio__answer" for="no">
-                        <input type="radio" id="no" name="subscription" value="no">
-                        <span class="radio__answer__no">Нет</span>
+                    <label class="radio__group radion__margin" for="no">
+                        <input class="radio__control" type="radio" id="no" name="subscription" value="no">
+                        <span class="radio__answer">Нет</span>
                     </label>
                 </fieldset>
             </div>
@@ -436,11 +438,22 @@
                 <textarea class="content-type__textarea" name="content-type" id="content-type" placeholder="Может, больше рецептов?"></textarea>
             </div>
 
-            <div class="popup__group">
-                <button class="popup__form__button">Отправить</button>
-            </div>
+            <button class="popup__form__button" type="submit">Отправить</button>
         </form>
-        <button class="popup__close"></button>
     </div>
+    <button class="popup__open" id="popup__open">Открыть попап</button>
+    <script>
+        const popupElement = document.getElementById("popup");
+        const popupOpenButton = document.getElementById("popup__open");
+        const popupCloseButton = document.getElementById("popup__close");
+
+        popupOpenButton.onclick = () => {
+            popupElement.classList.remove("hidden");
+        };
+
+        popupCloseButton.onclick = () => {
+            popupElement.classList.add("hidden");
+        };
+    </script>
 </body>
 </html>
